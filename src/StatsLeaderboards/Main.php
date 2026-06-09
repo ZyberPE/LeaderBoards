@@ -102,18 +102,34 @@ class Main extends PluginBase implements Listener{
         return $this->leaderboardsConfig;
     }
 
-    public function onDeath(PlayerDeathEvent $event) : void{
-        $victim = $event->getPlayer();
+public function onDeath(PlayerDeathEvent $event) : void{
 
-        $this->playerDataManager->addDeath(
-            $victim->getName()
-        );
+    $victim = $event->getPlayer();
 
-        $cause = $victim->getLastDamageCause();
+    $this->playerDataManager->addDeath(
+        $victim->getName()
+    );
 
-        if($cause === null){
-            return;
-        }
+    $cause = $victim->getLastDamageCause();
+
+    if(!$cause instanceof EntityDamageByEntityEvent){
+        return;
+    }
+
+    $damager = $cause->getDamager();
+
+    if(!$damager instanceof Player){
+        return;
+    }
+
+    if($damager->getName() === $victim->getName()){
+        return;
+    }
+
+    $this->playerDataManager->addKill(
+        $damager->getName()
+    );
+}
 
         $damager = $cause->getDamager();
 
