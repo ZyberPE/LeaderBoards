@@ -131,35 +131,6 @@ public function onDeath(PlayerDeathEvent $event) : void{
     );
 }
 
-public function onDeath(PlayerDeathEvent $event) : void{
-
-    $victim = $event->getPlayer();
-
-    $this->playerDataManager->addDeath(
-        $victim->getName()
-    );
-
-    $cause = $victim->getLastDamageCause();
-
-    if(!$cause instanceof EntityDamageByEntityEvent){
-        return;
-    }
-
-    $damager = $cause->getDamager();
-
-    if(!$damager instanceof Player){
-        return;
-    }
-
-    if($damager->getName() === $victim->getName()){
-        return;
-    }
-
-    $this->playerDataManager->addKill(
-        $damager->getName()
-    );
-}
-
 public function onBreak(BlockBreakEvent $event) : void{
     $this->playerDataManager->addBlock(
         $event->getPlayer()->getName()
