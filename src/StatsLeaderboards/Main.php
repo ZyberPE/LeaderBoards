@@ -137,12 +137,6 @@ public function onBreak(BlockBreakEvent $event) : void{
     );
 }
 
-    public function onBreak(BlockBreakEvent $event) : void{
-        $this->playerDataManager->addBlock(
-            $event->getPlayer()->getName()
-        );
-    }
-
     public function onCommand(
         CommandSender $sender,
         Command $command,
