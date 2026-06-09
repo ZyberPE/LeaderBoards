@@ -23,7 +23,11 @@ commands:
 
   stats:
     description: View stats
+    permission: statsleaderboards.stats
 
 permissions:
   statsleaderboards.admin:
     default: op
+
+  statsleaderboards.stats:
+    default: true
