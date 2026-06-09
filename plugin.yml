@@ -1,0 +1,29 @@
+name: StatsLeaderboards
+version: 1.0.0
+api: 5.0.0
+
+main: StatsLeaderboards\Main
+
+commands:
+  topkills:
+    description: Create or remove top kills leaderboard
+    permission: statsleaderboards.admin
+
+  topdeaths:
+    description: Create or remove top deaths leaderboard
+    permission: statsleaderboards.admin
+
+  topplaytime:
+    description: Create or remove top playtime leaderboard
+    permission: statsleaderboards.admin
+
+  topblocks:
+    description: Create or remove top blocks leaderboard
+    permission: statsleaderboards.admin
+
+  stats:
+    description: View stats
+
+permissions:
+  statsleaderboards.admin:
+    default: op
