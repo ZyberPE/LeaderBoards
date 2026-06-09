@@ -1,0 +1,63 @@
+update-interval: 60
+save-interval: 300
+
+messages:
+  created: "&aLeaderboard created."
+  removed: "&cLeaderboard removed."
+  not-found: "&cNo leaderboard found nearby."
+
+kills:
+  title: "&c&lTop Killers"
+  lines:
+    - "&6#1 &f{player1} &7- &c{value1}"
+    - "&6#2 &f{player2} &7- &c{value2}"
+    - "&6#3 &f{player3} &7- &c{value3}"
+    - "&6#4 &f{player4} &7- &c{value4}"
+    - "&6#5 &f{player5} &7- &c{value5}"
+    - "&6#6 &f{player6} &7- &c{value6}"
+    - "&6#7 &f{player7} &7- &c{value7}"
+    - "&6#8 &f{player8} &7- &c{value8}"
+    - "&6#9 &f{player9} &7- &c{value9}"
+    - "&6#10 &f{player10} &7- &c{value10}"
+
+deaths:
+  title: "&4&lTop Deaths"
+  lines:
+    - "&6#1 &f{player1} &7- &4{value1}"
+    - "&6#2 &f{player2} &7- &4{value2}"
+    - "&6#3 &f{player3} &7- &4{value3}"
+    - "&6#4 &f{player4} &7- &4{value4}"
+    - "&6#5 &f{player5} &7- &4{value5}"
+    - "&6#6 &f{player6} &7- &4{value6}"
+    - "&6#7 &f{player7} &7- &4{value7}"
+    - "&6#8 &f{player8} &7- &4{value8}"
+    - "&6#9 &f{player9} &7- &4{value9}"
+    - "&6#10 &f{player10} &7- &4{value10}"
+
+playtime:
+  title: "&b&lTop Playtime"
+  lines:
+    - "&6#1 &f{player1} &7- &b{value1}"
+    - "&6#2 &f{player2} &7- &b{value2}"
+    - "&6#3 &f{player3} &7- &b{value3}"
+    - "&6#4 &f{player4} &7- &b{value4}"
+    - "&6#5 &f{player5} &7- &b{value5}"
+    - "&6#6 &f{player6} &7- &b{value6}"
+    - "&6#7 &f{player7} &7- &b{value7}"
+    - "&6#8 &f{player8} &7- &b{value8}"
+    - "&6#9 &f{player9} &7- &b{value9}"
+    - "&6#10 &f{player10} &7- &b{value10}"
+
+blocks:
+  title: "&e&lTop Blocks Broken"
+  lines:
+    - "&6#1 &f{player1} &7- &e{value1}"
+    - "&6#2 &f{player2} &7- &e{value2}"
+    - "&6#3 &f{player3} &7- &e{value3}"
+    - "&6#4 &f{player4} &7- &e{value4}"
+    - "&6#5 &f{player5} &7- &e{value5}"
+    - "&6#6 &f{player6} &7- &e{value6}"
+    - "&6#7 &f{player7} &7- &e{value7}"
+    - "&6#8 &f{player8} &7- &e{value8}"
+    - "&6#9 &f{player9} &7- &e{value9}"
+    - "&6#10 &f{player10} &7- &e{value10}"
